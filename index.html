@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Index</title>
+
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="css/_misc/normalize.css">
+        <link rel="stylesheet"  href="main.css" >
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div class="form">
+                <form id="form" action="/" method="POST">
+	                <label class="form__label">
+		                <span class="form__label-title">ФИО</span>
+		                <input class="form__label-input" data-validation="text" name="name" type="text"/>
+	                </label>
+	                <label class="form__label">
+		                <span class="form__label-title">E-mail</span>
+		                <input class="form__label-input" data-validation="mail" name="mail" type="text"/>
+	                </label>
+	                <div class="form__submit--wrap">
+		                <input class="form__submit" type="submit" value="отправить"/>
+	                </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="popup" id="success">
+	        <div class="popup__overlay"></div>
+	        <div class="popup__content">
+		        <div class="popup__content-inner">
+			        Ваша заявка отправлена
+		        </div>
+		        <a class="popup__close" href="#"></a>
+	        </div>
+        </div>
+
+        <div class="popup" id="error">
+	        <div class="popup__overlay"></div>
+	        <div class="popup__content">
+		        <div class="popup__content-inner">
+			       <span class="error">
+				       что то пошло не так, повторите попозже
+			       </span>
+		        </div>
+		        <a class="popup__close" href="#"></a>
+	        </div>
+        </div>
+
+		<script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <!--<script src="js/common.js"></script>-->
+		<script src='js/main.js'></script>
+    </body>
+</html>
